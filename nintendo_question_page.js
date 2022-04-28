@@ -186,7 +186,7 @@ startGame = () => {
 getNewQuestion = () => {
     if(availableQuestions.length === 0 || questionCounter >= MAX_QUESTIONS) {
         localStorage.setItem('mostRecentScore', score)
-        return window.location.assign('../html/nintendo_end.html')
+        return window.location.assign('nintendo_end.html')
     }
 
     questionCounter++
@@ -208,11 +208,11 @@ getNewQuestion = () => {
 }
 
 choices.forEach(choice => {
-    choice.addEventListener('click', e=> {
+    choice.addEventListener('click', selected => {
         if(!acceptingAnswers) return
 
         acceptingAnswers = false
-        const selectedChoice = e.target
+        const selectedChoice = selected.target
         const selectedAnswer = selectedChoice.dataset['number']
         
         let classToApply = selectedAnswer == currentQuestion.answer ? 'correct' : 'incorrect'
