@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Quiz Page</title>
+        <link rel="stylesheet" href="../CSS/style.css">
+        <link rel="stylesheet" href="../CSS/question_css.css">
+    </head>
+    <body>
+        <div id="game">
+            <div id="hud">
+                <div class="hudItem">
+                    <p id="progressText" class="hudPrefix">question</p>
+                    <div id="progressBar">
+                        <div id="progressBarFull"></div>
+                    </div>
+                </div>
+                <div class="hudItem">
+                    <p class="hudPrefix">Score</p>
+                    <h1 id="score" class="hudMainText">0</h1>
+                </div>
+            </div>
+            <h1 id="question">What is the answer to this question</h1>
+            <div class="choice">
+                <p class="choiceLetter">A</p>
+                <p class="choiceText" data-number="1">Choice 1</p>
+            </div>
+            <div class="choice">
+                <p class="choiceLetter">B</p>
+                <p class="choiceText" data-number="2">Choice 2</p>
+            </div>
+            <div class="choice">
+                <p class="choiceLetter">C</p>
+                <p class="choiceText" data-number="3">Choice 3</p>
+            </div>
+            <div class="choice">
+                <p class="choiceLetter">D</p>
+                <p class="choiceText" data-number="4">Choice 4</p>
+            </div>
+        </div>
+        <script src="../JS/nintendo_question_page.js"></script>
+    </body>
+</html>
